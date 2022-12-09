@@ -1,0 +1,330 @@
+body {
+  font-family: "Open Sans";
+  font-size: 1em;
+  background-color: #f3f3f3;
+}
+
+/* Page Header */
+.pageHeader {
+  padding: 0.6em 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+.pageHeader .btn.btn-secondary {
+  background-color: transparent;
+  box-shadow: none !important;
+  border: none;
+  padding: 0;
+}
+.pageHeader .btn.btn-secondary i {
+  color: black;
+  margin-left: 0.1em;
+}
+.pageHeader .dropdown {
+  display: inline-block;
+  margin-left: 0.3em;
+}
+.pageHeader .dropdown .dropdown-menu {
+  border: none;
+  border-radius: 0.4em;
+  box-shadow: 0 0 10px #00000020;
+}
+.pageHeader .headerLink {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 0.5em;
+  transition: 200ms all ease-in-out;
+  position: relative;
+}
+.pageHeader .headerLink .notification {
+  background-color: #ff5f5f;
+  display: inline-block;
+  color: white;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  font-size: 0.7em;
+  text-align: center;
+  line-height: 1.4;
+  font-weight: 500;
+  position: absolute;
+  right: -5px;
+  top: 0px;
+}
+.pageHeader .headerLink:hover {
+  opacity: 0.5;
+}
+.mainHeading {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: black;
+}
+
+/* Body Wrapper */
+.bodyWrapper {
+  padding: 6em 2.5em;
+}
+.bodyWrapper .sideLinks {
+  margin-top: 5em;
+}
+.bodyWrapper .sideLinks .sideLink {
+  font-size: 1.2em;
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 1.5em;
+  transition: 200ms all ease-in-out;
+}
+.bodyWrapper .sideLinks .sideLink .linkIcon {
+  background-color: #c4c4c4;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  margin-right: 1.5em;
+  transition: 200ms all ease-in-out;
+}
+.bodyWrapper .sideLinks .sideLink.active .linkIcon,
+.bodyWrapper .sideLinks .sideLink:hover .linkIcon {
+  background-color: #7dcba3;
+}
+.bodyWrapper .sideLinks .sideLink.active,
+.bodyWrapper .sideLinks .sideLink:hover {
+  font-weight: 600;
+}
+
+/* Content Body */
+.contentBody {
+  padding: 3em 4em;
+  border-radius: 30px;
+  background-color: white;
+}
+.mainHeading.green {
+  color: #7dcba3;
+}
+.subHeading {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: black;
+}
+.hrLine {
+  background-color: #c4c4c4;
+  height: 1px;
+  margin: 2em -4em;
+}
+.commonLabel {
+  font-weight: 600;
+  color: black;
+}
+.userImgArea {
+  margin: 1.5em 0;
+}
+.italicText {
+  font-size: 0.9em;
+  font-style: italic;
+  color: #979797;
+}
+.commonInput {
+  width: 100%;
+  outline: none;
+  border-radius: 30px;
+  padding: 0.7em 1.5em;
+  margin-top: 1.2em;
+  border: 1px solid #aaa9a9;
+}
+.italicText.odd {
+  font-size: 1em;
+}
+.selectBtn {
+  color: #aaa9a9;
+  font-weight: 400;
+  border: 1px solid #979797;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.7em;
+  text-align: center;
+  border-radius: 30px;
+  transition: 200ms all ease-in-out;
+  width: 100%;
+  margin-right: 1em;
+  max-width: 300px;
+}
+.selectBtn:hover,
+.selectBtn.selected {
+  color: #7dcba3;
+  border-color: #7dcba3;
+}
+.headlineDetails {
+  margin-top: 1em;
+  padding-left: 2em;
+}
+.headlineDetails li {
+  list-style: disc;
+}
+.headlineDetails ul {
+  margin-top: 0.5em;
+  padding-left: 2em;
+}
+.tabButtons .tagBtn {
+  color: black;
+  font-weight: 600;
+  padding: 0.6em 1.3em;
+  border: 1px solid black;
+  width: 100%;
+  max-width: 200px;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-right: 0.8em;
+  display: inline-block;
+  margin-top: 1em;
+}
+.tabButtons {
+  margin-top: 0.7em;
+}
+.tagBtn:hover i {
+  color: red;
+}
+.tabButtons .tagBtn i {
+  transition: 200ms all ease-in-out;
+  float: right;
+  margin-top: 0.3em;
+}
+.orangeBtn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.7em 2em;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  background-color: #f98637;
+  transition: 200ms all ease-in-out;
+  font-weight: 600;
+}
+.orangeBtn:hover {
+  transform: translateY(-3px);
+  opacity: 0.7;
+}
+.textAreaContainer {
+  position: relative;
+}
+.textAreaContainer .italicText {
+  font-style: normal;
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+}
+.textAreaContainer .commonInput {
+  resize: none;
+}
+.orangeBtn.outlineBtn {
+  border: 1px solid #979797;
+  color: #979797;
+  background-color: transparent;
+}
+.multiButton .orangeBtn:nth-of-type(1) {
+  width: 100%;
+  max-width: 120px;
+}
+.multiButton .orangeBtn:nth-of-type(2) {
+  width: 100%;
+  max-width: 250px;
+}
+.multiButton .orangeBtn:nth-of-type(3) {
+  width: 100%;
+  max-width: 240px;
+}
+.multiButton {
+  text-align: center;
+  margin-top: 2.5em;
+}
+.mainText {
+  color: black;
+}
+.editContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+.editContainer .actionBtn {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 0.3em;
+  transition: 200ms all ease-in-out;
+}
+.editContainer .actionBtn:hover {
+  transform: translateY(-3px);
+}
+.mainText.odd {
+  font-style: italic;
+}
+
+/* Common Modal */
+.commonModal .modal-title {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: black;
+}
+.commonModal .modal-content {
+  border: none;
+  border-radius: 30px;
+}
+.commonModal .modal-body {
+  padding: 1em 3em 3em 3em;
+}
+.commonModal .modal-header {
+  border-bottom: none;
+  padding: 2em 3em 0 3em;
+}
+.commonModal .text-center .orangeBtn {
+  padding: 0.7em 5em;
+  margin-top: 1em;
+}
+.itemsCard {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+.itemsCard .itemCardImg {
+  width: 100%;
+}
+.itemsCard .deleteBtn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+  height: 37px;
+  line-height: 2;
+  text-align: center;
+  width: 37px;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transition: 200ms all ease-in-out;
+}
+.itemsCard .deleteBtn:hover {
+  background-color: #7dcba3;
+}
+label.itemsCard {
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+label.itemsCard input {
+  display: none;
+}
+label.itemsCard .mainText {
+  font-size: 0.9em;
+  margin-top: 1em;
+}
+.itemsCard.empty {
+  background-color: #f5f5f7;
+  border: 1px solid #c4c4c4;
+}
