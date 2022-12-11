@@ -328,3 +328,354 @@ label.itemsCard .mainText {
   background-color: #f5f5f7;
   border: 1px solid #c4c4c4;
 }
+
+.whiteBody {
+  background-color: white;
+}
+.whiteBody .pageHeader {
+  border-bottom: 1px solid #00000010;
+}
+/* Profile Page */
+.profileBodyWrapper {
+  text-align: center;
+  padding: 7em 0;
+}
+.profileBodyWrapper .mainText {
+  line-height: 1.3;
+  margin-top: 1.8em;
+}
+.profileBodyWrapper .profileButtons {
+  margin-top: 2.5em;
+}
+.profileBodyWrapper .profileButtons .orangeBtn {
+  border: 1px solid transparent;
+  margin: 0 0.5em;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+}
+.profileBodyWrapper .profileButtons :first-child.orangeBtn {
+  border-color: #f98637;
+  background-color: transparent;
+  color: #f98637;
+}
+
+/* Preview and Publish Page */
+.bodyWrapper.publishBody {
+  padding: 5em 0;
+}
+.bodyWrapper.publishBody .hrLine {
+  margin: 2em 0;
+}
+.bodyWrapper.publishBody .mainText img {
+  vertical-align: sub;
+  margin-right: 0.5em;
+}
+.userDetails .mainHeading {
+  margin-bottom: 1em;
+}
+.userDetails .mainText {
+  line-height: 1.2;
+}
+.buttonsContainer {
+  border: 1px solid #c4c4c4;
+  border-radius: 33px;
+  padding: 2em 1.6em;
+}
+.buttonsContainer .orangeBtn {
+  width: 100%;
+  text-align: center;
+  border: 1px solid transparent;
+}
+.buttonsContainer :last-child.orangeBtn {
+  border-color: black;
+  color: black;
+  background-color: transparent;
+  margin-top: 1em;
+}
+.orangeBtn.green {
+  border: 1px solid #7dcba3;
+  border-radius: 30px;
+  color: #7dcba3;
+  background-color: transparent;
+}
+.row.userRow {
+  align-items: center;
+}
+.aboutContainer .subHeading {
+  margin-bottom: 0.9em;
+}
+.aboutContainer .mainText {
+  line-height: 1.3;
+}
+.detailsContainer {
+  margin-top: 2.5em;
+}
+.detailsContainer .percent {
+  background-color: #7dcba3;
+  border-radius: 6px;
+  color: white;
+  text-align: center;
+  padding: 0.3em;
+}
+.detailsContainer .row.detailsRow {
+  align-items: center;
+  margin-top: 1.3em;
+}
+.detailsContainer .mainText i {
+  font-size: 1.4em;
+  color: #7dcba3;
+  margin-right: 0.2em;
+}
+.servicesContainer .subHeading {
+  margin-bottom: 1em;
+}
+.showCaseImages {
+  margin-top: 1.3em;
+  width: 100%;
+}
+.reviewContainer .subHeading {
+  margin-bottom: 0.8em;
+}
+.reviewContainer .subHeading img {
+  vertical-align: sub;
+  margin-right: 0.2em;
+}
+.grayText {
+  color: #aaa9a9;
+  font-size: 0.9em;
+}
+
+/* Profile Published Page */
+.editUserContainer .mainText span {
+  text-decoration: underline;
+}
+.editUserContainer .editUserImg {
+  border-radius: 50%;
+}
+.userDetails.edit .mainText {
+  font-weight: 600;
+}
+.editHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.editLink {
+  display: inline-block;
+  text-decoration: none;
+  transition: 200ms all ease-in-out;
+}
+.editLink:hover {
+  opacity: 0.7;
+}
+.addLink {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: 200ms all ease-in-out;
+}
+.addLink i {
+  background-color: #f98637;
+  color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.8;
+}
+.addLink span {
+  margin-left: 0.8em;
+  text-decoration: underline;
+  font-weight: 500;
+  color: black;
+}
+.addLink:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+.editingArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainText strong {
+  margin-bottom: 1.2em;
+  display: inline-block;
+}
+.reviewContainer.reviewProgress .mainText {
+  font-weight: 500;
+}
+.reviewContainer.reviewProgress .row {
+  align-items: center;
+  margin-bottom: 1.7em;
+}
+.reviewContainer.reviewProgress .smText {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+.reviewContainer.reviewProgress .progress {
+  border-radius: 30px;
+  height: 0.9em;
+}
+.reviewContainer.reviewProgress .progress-bar {
+  border-radius: 30px;
+  background-color: #87c1f9;
+}
+.sortedContainer {
+  padding: 1em 0 3em 0;
+}
+.sortedContainer .sortedBtn {
+  display: inline-block;
+  text-decoration: none;
+  color: #979797;
+  font-weight: 600;
+  padding: 0.5em 1.3em;
+  border-radius: 30px;
+  border: 1px solid #c4c4c4;
+  transition: 200ms all ease-in-out;
+}
+.sortedContainer .sortedBtn:hover {
+  border-color: #7dcba3;
+  color: #7dcba3;
+}
+.sortedContainer .sortedBtn img {
+  margin-right: 0.5em;
+}
+.professionalsContainer {
+  background-color: #fff8f3;
+  padding: 5em 0;
+  text-align: center;
+}
+.professionalsContainer .userCard {
+  padding: 2em 1.5em;
+  background-color: #ffffff;
+  border-radius: 39px;
+}
+.professionalsContainer .userCard .userCardImg {
+  border-radius: 50%;
+  margin: 1.4em 0;
+  display: unset;
+  width: unset;
+}
+.professionalsContainer .userCard .cardText {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: black;
+  line-height: 1.3;
+}
+.professionalsContainer .userCard .subHeading {
+  margin-bottom: 0.6em;
+  font-size: 1.1em;
+}
+.professionalsContainer .userCard .subHeading img {
+  height: 20px;
+  margin: 0 0.1em;
+  display: unset;
+  width: unset;
+}
+.professionalsContainer .userCard .orangeBtn.green {
+  padding: 0.4em 1.2em;
+  font-size: 0.9em;
+}
+.professionalsContainer .owl-next {
+  position: absolute;
+  right: -35px;
+  top: 42%;
+  transform: translateY(-50%);
+}
+.professionalsContainer .owl-prev {
+  position: absolute;
+  left: -35px;
+  top: 42%;
+  transform: translateY(-50%);
+}
+.professionalsContainer .owl-next span,
+.professionalsContainer .owl-prev span {
+  font-size: 4em;
+  color: #c4c4c4;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover,
+.owl-theme .owl-prev [class*="owl-"]:hover {
+  background-color: transparent;
+  color: #c4c4c4;
+}
+.relatedSearchesContainer {
+  padding-top: 5em;
+  text-align: center;
+}
+.relatedSearchesContainer .orangeBtn.green {
+  margin: 0.5em;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+}
+
+/* Edit Profile Page */
+.activeStatusContainer {
+  background-color: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 30px;
+  padding: 3em;
+  margin-bottom: 2em;
+}
+.activeStatusContainer .activeTag {
+  background-color: #7dcba3;
+  display: inline-block;
+  padding: 0.2em 1em;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+.activeStatusContainer .orangeText {
+  margin: 2em 0;
+  color: #f98637;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+.activeStatusContainer .orangeText img {
+  vertical-align: bottom;
+  margin-right: 0.2em;
+}
+.activeStatusContainer .mainText {
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.activeStatusContainer .subHeading {
+  font-size: 1.3em;
+}
+.activeStatusContainer .activeEditSide {
+  text-align: center;
+  padding-left: 0.6em;
+  padding-top: 2em;
+}
+.activeStatusContainer .activeEditSide .activeEditBtn {
+  text-decoration: none;
+  display: inline-block;
+}
+.activeStatusContainer .col-lg-8 {
+  border-right: 1px solid #c4c4c4;
+}
+.activeStatusContainer.inactive .activeTag {
+  background-color: #c4c4c4;
+}
+.activeStatusContainer.inactive {
+  background-color: #f3f3f3;
+  border: 1px solid #f3f3f3;
+}
+.commonModal .commonInput.odd {
+  border-radius: 0.1em;
+}
+.commonModal textarea.commonInput.odd {
+  resize: none;
+}
+.commonModal .aboutContainer {
+  border: 1px solid #f3f3f3;
+  padding: 1em;
+  overflow-y: scroll;
+  height: 300px;
+}
+.commonModal .hrLine {
+  margin: 3em -3em;
+}

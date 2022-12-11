@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="whiteBody">
+    <!-- Page Header -->
+    <header class="pageHeader">
+      <div>
+        <a class="brand" href="#">
+          <img src="./img/logo.svg" alt="" />
+        </a>
+      </div>
+      <div>
+        <a class="headerLink" href="#">
+          <img src="./img/header-icon-1.svg" alt="" />
+        </a>
+        <a class="headerLink" href="#">
+          <span class="notification">2</span>
+          <img src="./img/header-icon-2.svg" alt="" />
+        </a>
+        <a class="headerLink" href="#">
+          <span class="notification">5</span>
+          <img src="./img/header-icon-3.svg" alt="" />
+        </a>
+        <a class="headerLink" href="#">
+          <img src="./img/header-icon-4.svg" alt="" />
+        </a>
+        <span class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img src="./img/user-img.svg" alt="" />
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-start"
+            aria-labelledby="dropdownMenuButton1"
+          >
+            <li><a class="dropdown-item" href="#">Action 1</a></li>
+            <li><a class="dropdown-item" href="#">Action 2</a></li>
+            <li><a class="dropdown-item" href="#">Action 3</a></li>
+          </ul>
+        </span>
+      </div>
+    </header>
+
+    <!-- Body Wrapper -->
+    <div class="bodyWrapper publishBody">
+      <div class="container">
+        <div class="contentBody">
+          <h1 class="mainHeading green mb-3">Preview and publish</h1>
+          <h2 class="subHeading">Step 4 of 4</h2>
+          <div class="hrLine"></div>
+          <div class="row userRow">
+            <div class="col-lg-2">
+              <div class="editUserContainer">
+                <img
+                  class="my-4 editUserImg"
+                  src="./img/edit-user-img.png"
+                  alt=""
+                />
+                <p class="mainText">
+                  <img src="./img/star-icon.svg" alt="" />4.5
+                  <span>(12 reviews)</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 my-4 my-lg-0">
+              <div class="userDetails edit">
+                <h1 class="mainHeading editHeading">
+                  <div>
+                    Jade Dharmana
+                    <img class="mx-2" src="./img/check-icon.svg" alt="" />
+                    <img src="./img/plus-icon.svg" alt="" />
+                  </div>
+                  <a
+                    data-bs-toggle="modal"
+                    data-bs-target="#editModal1"
+                    class="editLink me-4"
+                    href="#"
+                    ><img src="./img/pencil-icon.svg" alt=""
+                  /></a>
+                </h1>
+                <p class="mainText">
+                  Mom of two, Hong Kong’s top rated sleep <br />
+                  consultant. Experience of 10 years.
+                </p>
+                <a class="orangeBtn green mt-4" href="#">Sleep consultant</a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="buttonsContainer">
+                <a class="orangeBtn" href="#">Contact Jade</a>
+                <a class="orangeBtn" href="#"
+                  ><i class="fa-regular fa-heart me-1"></i> Save profile</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="hrLine mt-4"></div>
+          <div class="row">
+            <div class="col-lg-10">
+              <div class="aboutContainer">
+                <h2 class="subHeading editHeading">
+                  <div>About</div>
+                  <a
+                    data-bs-toggle="modal"
+                    data-bs-target="#editModal2"
+                    class="editLink"
+                    href="#"
+                    ><img src="./img/pencil-icon.svg" alt=""
+                  /></a>
+                </h2>
+                <p class="mainText">
+                  My journey as a child sleep consultant essentially began when
+                  my daughter Myla was born almost four years ago. After a short
+                  but very sweet start, she was diagnosed with colic and the
+                  next few blurry months were riddled with tears, self-doubt and
+                  soul crushing exhaustion. You might be going through something
+                  similar but there are a million other sleep challenges that
+                  children face.
+                </p>
+                <p class="mainText my-4">
+                  I really needed help and just wanted someone to tell me what
+                  to do and how to do it. Confused by mixed advice from friends
+                  and books, I had reached my limit and decided to hire a sleep
+                  consultant to get me back on track and as Myla settled and got
+                  into her own groove, the whole family started to get more
+                  sleep…finally!
+                </p>
+                <p class="mainText">
+                  I would say I became fascinated as I learnt just how important
+                  a decent night’s sleep is to our children’s health,
+                  development and wellbeing.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hrLine mt-4"></div>
+          <div class="detailsContainer">
+            <div class="row detailsRow">
+              <div class="col-lg-2">
+                <p class="mainText">Response rate:</p>
+              </div>
+              <div class="col-lg-2">
+                <div class="percent">100%</div>
+              </div>
+              <div class="col-lg-8 text-end">
+                <a
+                  data-bs-toggle="modal"
+                  data-bs-target="#editModal5"
+                  class="editLink"
+                  href="#"
+                  ><img src="./img/pencil-icon.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="row detailsRow">
+              <div class="col-lg-2">
+                <p class="mainText">Location:</p>
+              </div>
+              <div class="col-lg-4">
+                <p class="mainText">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Hong Kong
+                </p>
+              </div>
+            </div>
+            <div class="row detailsRow">
+              <div class="col-lg-2">
+                <p class="mainText">Languages:</p>
+              </div>
+              <div class="col-lg-6">
+                <p class="mainText">English, French</p>
+              </div>
+            </div>
+          </div>
+          <div class="hrLine mt-4"></div>
+          <div class="servicesContainer">
+            <h2 class="subHeading">Services</h2>
+            <a class="addLink" href="#"
+              ><i class="fa-solid fa-plus"></i> <span>Add new listing</span></a
+            >
+            <div class="activeStatusContainer mt-5">
+              <div class="row gx-5">
+                <div class="col-lg-8">
+                  <span class="activeTag">Active</span>
+                  <p class="orangeText">
+                    <img src="./img/popular-icon.svg" alt="" /> Most popular
+                  </p>
+                  <h2 class="subHeading">
+                    One-time, one-hour Skype consultation
+                  </h2>
+                  <p class="mainText">
+                    With this package, you receive my one on one support for a
+                    minimum period of two weeks to tackle your child’s sleep
+                    issues. This service is designed to walk you through every
+                    stage of your sleep plan, which...
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="activeEditSide">
+                    <h2 class="subHeading">HK$800</h2>
+                    <div class="hrLine my-5"></div>
+                    <a class="activeEditBtn" href="#">
+                      <img src="./img/eye-icon.svg" alt="" />
+                    </a>
+                    <a class="activeEditBtn mx-2" href="#">
+                      <img src="./img/edit-icon.svg" alt="" />
+                    </a>
+                    <a class="activeEditBtn" href="#">
+                      <img src="./img/trash-icon.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="activeStatusContainer">
+              <div class="row gx-5">
+                <div class="col-lg-8">
+                  <span class="activeTag">Active</span>
+                  <h2 class="subHeading mt-4">Two-time Skype consultation</h2>
+                  <p class="mainText">
+                    With this package, you receive my one on one support for a
+                    minimum period of two weeks to tackle your child’s sleep
+                    issues. This service is designed to walk you through every
+                    stage of your...
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="activeEditSide">
+                    <h2 class="subHeading">HK$800</h2>
+                    <div class="hrLine my-5"></div>
+                    <a class="activeEditBtn" href="#">
+                      <img src="./img/eye-icon.svg" alt="" />
+                    </a>
+                    <a class="activeEditBtn mx-2" href="#">
+                      <img src="./img/edit-icon.svg" alt="" />
+                    </a>
+                    <a class="activeEditBtn" href="#">
+                      <img src="./img/trash-icon.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="activeStatusContainer inactive">
+              <div class="row gx-5">
+                <div class="col-lg-8">
+                  <span class="activeTag">Active</span>
+                  <h2 class="subHeading mt-4">Two-time Skype consultation</h2>
+                  <p class="mainText">
+                    With this package, you receive my one on one support for a
+                    minimum period of two weeks to tackle your child’s sleep
+                    issues. This service is designed to walk you through every
+                    stage of your sleep plan, which...
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="activeEditSide">
+                    <h2 class="subHeading">HK$800</h2>
+                    <div class="hrLine my-5"></div>
+                    <a class="activeEditBtn" href="#">
+                      <img src="./img/eye-icon.svg" alt="" />
+                    </a>
+                    <a class="activeEditBtn mx-2" href="#">
+                      <img src="./img/edit-icon.svg" alt="" />
+                    </a>
+                    <a class="activeEditBtn" href="#">
+                      <img src="./img/trash-icon.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hrLine mt-5"></div>
+          <div class="servicesContainer">
+            <h2 class="subHeading">Qualifications</h2>
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#editModal4"
+              class="addLink"
+              href="#"
+              ><i class="fa-solid fa-plus"></i> <span>Add new</span></a
+            >
+            <p class="mainText mt-5">
+              <strong>Education</strong>
+            </p>
+            <div class="editingArea">
+              <p class="mainText">
+                BA Nutrition • College of Dietitians of British Columbia • June,
+                2000
+              </p>
+              <div>
+                <a
+                  data-bs-toggle="modal"
+                  data-bs-target="#editModal3"
+                  class="editLink"
+                  href="#"
+                  ><img src="./img/pencil-icon.svg" alt=""
+                /></a>
+                <a class="editLink ms-2" href="#"
+                  ><img src="./img/trash-icon.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <p class="mainText mt-5">
+              <strong>Certification</strong>
+            </p>
+            <p class="mainText">No information yet</p>
+          </div>
+          <div class="hrLine mt-5"></div>
+          <div class="showCaseContainer">
+            <h2 class="subHeading editHeading">
+              <div>Showcase</div>
+              <a
+                data-bs-toggle="modal"
+                data-bs-target="#editModal6"
+                class="editLink"
+                href="#"
+                ><img src="./img/pencil-icon.svg" alt=""
+              /></a>
+            </h2>
+            <img
+              class="showCaseImages"
+              src="./img/showcase-images.png"
+              alt=""
+            />
+          </div>
+          <div class="hrLine mt-5"></div>
+          <div class="reviewContainer reviewProgress">
+            <h2 class="subHeading">
+              <img src="./img/star-icon.svg" alt="" /> 4.5 (12 reviews)
+            </h2>
+            <div class="row mt-5 gx-5">
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="col-lg-7">
+                    <p class="mainText">A</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 90%"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-1">
+                    <div class="smText">4.8</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-7">
+                    <p class="mainText">B</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 90%"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-1">
+                    <div class="smText">4.8</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-7">
+                    <p class="mainText">C</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 90%"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-1">
+                    <div class="smText">4.8</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-7">
+                    <p class="mainText">D</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 90%"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-1">
+                    <div class="smText">4.8</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="col-lg-7">
+                    <p class="mainText">E</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 90%"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-1">
+                    <div class="smText">4.8</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-7">
+                    <p class="mainText">F</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 90%"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-1">
+                    <div class="smText">4.8</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-7">
+                    <p class="mainText">G</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 90%"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-1">
+                    <div class="smText">4.8</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-7">
+                    <p class="mainText">H</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 90%"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-1">
+                    <div class="smText">4.8</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hrLine mt-5"></div>
+          <div class="sortedContainer">
+            <a class="sortedBtn" href="#"
+              ><img src="./img/sort-icon.svg" alt="" /> Sort</a
+            >
+            <div class="row mt-5">
+              <div class="col-lg-10">
+                <div class="row">
+                  <div class="col-lg-1">
+                    <img src="./img/user-img.svg" alt="" />
+                  </div>
+                  <div class="col-lg-11">
+                    <p class="mainText">Siobhan Ho Lee</p>
+                    <p class="grayText mt-2">
+                      <img class="me-2" src="./img/calender-icon.svg" alt="" />
+                      7 OCT 2021
+                    </p>
+                    <h2 class="subHeading mt-3">
+                      <img src="./img/star-icon.svg" alt="" /> 4.9 Jade is a
+                      lifesaver!
+                    </h2>
+                    <p class="mainText mt-3">
+                      Jade has been an absolute lifesaver in our sleep journey.
+                      We decided to contact a professional sleep trainer when my
+                      6-month old son was waking up every 15-30mins during every
+                      nap and even during the night. The longest stretch he had
+                      ever slept since he was born was 2 hours! (And this only
+                      happened once or twice) During the three weeks we worked
+                      with Jade, she had been nothing but helpful, supportive,
+                      and professional. She guided and supported us everyday in
+                      helping my son get on a regular sleep and feeding schedule
+                      and the results have been nothing short of a miracle. In
+                      about two weeks time, my son was able to sleep through the
+                      night!! On his own, in his own crib, without any
+                      associations that he used to have, like sleeping by
+                      feeding, using a pacifier, holding and rocking him... I
+                      simply couldn't believe it. Even if he wakes up in the
+                      middle of the night, he is able to self-soothe back to
+                      sleep on his own. It really has been life-changing and our
+                      whole family can finally get some good night's sleep. It
+                      was an absolute pleasure to work with Jade, whose gentle
+                      yet firm approach was tailored to our situation and needs.
+                      She is detail-oriented, supportive, and always made sure
+                      we were comfortable with the steps during the whole
+                      process. She answered any and all questions we had so that
+                      we knew exactly how to handle any situation. I would
+                      definitely recommend Jade to all my friends!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="professionalsContainer">
+        <div class="container">
+          <h1 class="mainHeading">Other professionals like Jade</h1>
+          <div id="professionalsCarousel" class="owl-carousel owl-theme mt-5">
+            <div class="item">
+              <div class="userCard">
+                <a class="orangeBtn green" href="#">Lactation Consultant</a>
+                <br />
+                <img class="userCardImg" src="./img/edit-user-img.png" alt="" />
+                <h2 class="subHeading">
+                  Yvonne Heavyside
+                  <img class="ms-2" src="./img/check-icon.svg" alt="" />
+                  <img src="./img/plus-icon.svg" alt="" />
+                </h2>
+                <p class="cardText">
+                  Lactation consultant with over 40 years of experience
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="userCard">
+                <a class="orangeBtn green" href="#">Lactation Consultant</a>
+                <br />
+                <img class="userCardImg" src="./img/edit-user-img.png" alt="" />
+                <h2 class="subHeading">
+                  Yvonne Heavyside
+                  <img class="ms-2" src="./img/check-icon.svg" alt="" />
+                  <img src="./img/plus-icon.svg" alt="" />
+                </h2>
+                <p class="cardText">
+                  Lactation consultant with over 40 years of experience
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="userCard">
+                <a class="orangeBtn green" href="#">Lactation Consultant</a>
+                <br />
+                <img class="userCardImg" src="./img/edit-user-img.png" alt="" />
+                <h2 class="subHeading">
+                  Yvonne Heavyside
+                  <img class="ms-2" src="./img/check-icon.svg" alt="" />
+                  <img src="./img/plus-icon.svg" alt="" />
+                </h2>
+                <p class="cardText">
+                  Lactation consultant with over 40 years of experience
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="userCard">
+                <a class="orangeBtn green" href="#">Lactation Consultant</a>
+                <br />
+                <img class="userCardImg" src="./img/edit-user-img.png" alt="" />
+                <h2 class="subHeading">
+                  Yvonne Heavyside
+                  <img class="ms-2" src="./img/check-icon.svg" alt="" />
+                  <img src="./img/plus-icon.svg" alt="" />
+                </h2>
+                <p class="cardText">
+                  Lactation consultant with over 40 years of experience
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relatedSearchesContainer">
+        <div class="container">
+          <h1 class="mainHeading mb-5">Related searches</h1>
+          <a class="orangeBtn green" href="#">Postnatal nanny</a>
+          <a class="orangeBtn green" href="#">Lactation consultant</a>
+          <a class="orangeBtn green" href="#">Sleep consultant</a>
+          <br />
+          <a class="orangeBtn green" href="#">Physical therapist</a>
+          <a class="orangeBtn green" href="#">Chiropractor</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div
+      class="modal fade commonModal"
+      id="editModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">General Info</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <label class="commonLabel ms-2" for="">First Name</label>
+            <input class="commonInput odd" type="text" placeholder="Auntie" />
+            <label class="commonLabel ms-2 mt-3" for="">Last Name</label>
+            <input class="commonInput odd" type="text" placeholder="lka" />
+            <label class="commonLabel ms-2 mt-3" for=""
+              >Short Description</label
+            >
+            <textarea
+              class="commonInput odd"
+              name=""
+              id=""
+              cols="30"
+              rows="3"
+              placeholder=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, atque."
+            ></textarea>
+            <div class="text-center mt-4">
+              <button class="orangeBtn">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2 -->
+    <div
+      class="modal fade commonModal"
+      id="editModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">About</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="aboutContainer">
+              <p class="mainText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                excepturi laborum iure ea quo rerum laboriosam ipsa molestias
+                aliquam quibusdam fuga, a, commodi odit quos tempora dolor
+                assumenda perspiciatis debitis doloremque delectus totam.
+                Tempore harum assumenda, molestias quisquam mollitia beatae
+                maiores quia. Animi quas quos alias iste nisi consequatur,
+                veniam sint atque modi fugiat, corrupti maiores facere illo
+                repudiandae autem aliquid sit in consectetur ipsum impedit
+                laborum velit qui! Natus repellendus aut cumque, explicabo optio
+                aspernatur reiciendis ratione qui incidunt maxime, fugiat,
+                assumenda beatae architecto eligendi quisquam accusantium!
+                Alias, nisi repellat maiores esse praesentium, recusandae
+                distinctio aspernatur quam itaque non eius cupiditate asperiores
+                harum, ex neque! Officiis dolores inventore sunt minima,
+                laboriosam deserunt saepe possimus cumque facere rem. Impedit ab
+                excepturi distinctio ad consequatur, laudantium eos placeat
+                laboriosam dolore assumenda facilis ratione, asperiores maiores!
+                Soluta et ad, at recusandae tempora, molestiae doloribus
+                officiis porro facilis exercitationem voluptate, est nihil
+                deleniti sunt perferendis consequuntur possimus. Dolores
+                temporibus quia omnis reprehenderit commodi assumenda? Maxime
+                culpa perspiciatis, numquam rem obcaecati ex fuga quia placeat
+                ullam ducimus, excepturi officia! Aperiam odio, omnis quia
+                laudantium earum corrupti, illo quibusdam accusamus dolor sit
+                adipisci perferendis deleniti necessitatibus aliquid sunt
+                incidunt in accusantium ipsa repudiandae ullam voluptatem!
+              </p>
+            </div>
+            <div class="text-center mt-4">
+              <button class="orangeBtn">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Modal 3 -->
+    <div
+      class="modal fade commonModal"
+      id="editModal3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit education</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <label class="commonLabel ms-2" for="">School</label>
+            <input
+              class="commonInput"
+              type="text"
+              placeholder="College of Dietitians of British Columbia"
+            />
+            <label class="commonLabel ms-2 mt-3" for="">Degree</label>
+            <input
+              class="commonInput"
+              type="text"
+              placeholder="BA Nutrition "
+            />
+            <label class="commonLabel ms-2 mt-3" for=""
+              >Year of completion</label
+            >
+            <div class="row">
+              <div class="col-lg-6">
+                <select class="commonInput" name="" id="">
+                  <option value="">Month</option>
+                  <option value="">Jun</option>
+                  <option value="">Mar</option>
+                  <option value="">Feb</option>
+                </select>
+              </div>
+              <div class="col-lg-6">
+                <select class="commonInput" name="" id="">
+                  <option value="">Year</option>
+                  <option value="">2000</option>
+                  <option value="">2001</option>
+                  <option value="">2002</option>
+                </select>
+              </div>
+            </div>
+            <div class="text-center mt-4">
+              <button class="orangeBtn">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Modal 4 -->
+    <div
+      class="modal fade commonModal"
+      id="editModal4"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Qualifications</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="hrLine"></div>
+            <div class="row">
+              <div class="col-lg-12">
+                <label class="commonLabel" for="">Education</label>
+                <div class="editContainer">
+                  <p class="mainText">
+                    BA Nutrition • College of Dietitians of British Columbia •
+                    June, 2000
+                  </p>
+                </div>
+                <p class="mainText odd mt-5 mb-4">Add new education</p>
+                <label class="commonLabel ms-2" for="">School</label>
+                <input
+                  class="commonInput"
+                  type="text"
+                  placeholder="For example: College of Dietitians of British Columbia"
+                />
+                <label class="commonLabel ms-2 mt-3" for="">Degree</label>
+                <input
+                  class="commonInput"
+                  type="text"
+                  placeholder="For example: BA Nutrition"
+                />
+                <label class="commonLabel ms-2 mt-3" for=""
+                  >Year of completion</label
+                >
+                <div class="row">
+                  <div class="col-lg-6">
+                    <select class="commonInput" name="" id="">
+                      <option value="">Month</option>
+                      <option value="">Jun</option>
+                      <option value="">Mar</option>
+                      <option value="">Feb</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6">
+                    <select class="commonInput" name="" id="">
+                      <option value="">Year</option>
+                      <option value="">2000</option>
+                      <option value="">2001</option>
+                      <option value="">2002</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="text-end mt-4">
+                  <button class="orangeBtn">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="hrLine mt-5"></div>
+            <div class="row">
+              <div class="col-lg-12">
+                <label class="commonLabel" for="">Certification</label>
+                <div class="editContainer">
+                  <p class="mainText">
+                    UK Registered General Nurse • Hospital of London • May, 2000
+                  </p>
+                </div>
+                <div class="editContainer">
+                  <p class="mainText">
+                    Community Nurse • Hospital of Whales • June, 2000
+                  </p>
+                </div>
+                <p class="mainText odd mt-5 mb-4">Add new certification</p>
+                <label class="commonLabel ms-2" for="">Institution</label>
+                <input
+                  class="commonInput"
+                  type="text"
+                  placeholder="For example: Hospital of London"
+                />
+                <label class="commonLabel ms-2 mt-3" for="">Title</label>
+                <input
+                  class="commonInput"
+                  type="text"
+                  placeholder="For example: UK Registered General Nurse"
+                />
+                <label class="commonLabel ms-2 mt-3" for=""
+                  >Year of completion</label
+                >
+                <div class="row">
+                  <div class="col-lg-6">
+                    <select class="commonInput" name="" id="">
+                      <option value="">Month</option>
+                      <option value="">Jun</option>
+                      <option value="">Mar</option>
+                      <option value="">Feb</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6">
+                    <select class="commonInput" name="" id="">
+                      <option value="">Year</option>
+                      <option value="">2000</option>
+                      <option value="">2001</option>
+                      <option value="">2002</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="text-end mt-4">
+                  <button class="orangeBtn">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Modal 5 -->
+    <div
+      class="modal fade commonModal"
+      id="editModal5"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-12">
+                <label class="commonLabel me-2" for="">Edit Location</label>
+                <span class="italicText odd">Where are you based?</span>
+                <input
+                  value="Hong Kong"
+                  class="commonInput"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </div>
+            </div>
+            <div class="hrLine mt-5"></div>
+            <div class="row">
+              <div class="col-lg-12">
+                <label class="commonLabel me-2" for="">Edit Language</label>
+                <span class="italicText odd"
+                  >Which language(s) do you speak?</span
+                >
+                <div class="tabButtons">
+                  <div class="tagBtn">
+                    English <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <div class="tagBtn">
+                    Cantonese <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <div class="tagBtn">
+                    Mandarin <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <div class="tagBtn">
+                    Haka <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <div class="tagBtn">
+                    French <i class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+                <input
+                  class="commonInput"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Language"
+                />
+                <div class="text-end mt-4">
+                  <button class="orangeBtn">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-4">
+              <button class="orangeBtn">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Modal 6 -->
+    <div
+      class="modal fade commonModal"
+      id="editModal6"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Showcase</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <label class="commonLabel me-2" for="">Showcase</label>
+            <span class="italicText odd">You can upload 10 photos max</span>
+            <div class="row gx-2 mt-4">
+              <div class="col">
+                <div class="itemsCard">
+                  <a class="deleteBtn" href="#">
+                    <img src="./img/trash-icon.svg" alt="" />
+                  </a>
+                  <img
+                    class="itemCardImg"
+                    src="./img/item-card-img-1.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="itemsCard">
+                  <a class="deleteBtn" href="#">
+                    <img src="./img/trash-icon.svg" alt="" />
+                  </a>
+                  <img
+                    class="itemCardImg"
+                    src="./img/item-card-img-2.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="itemsCard">
+                  <a class="deleteBtn" href="#">
+                    <img src="./img/trash-icon.svg" alt="" />
+                  </a>
+                  <img
+                    class="itemCardImg"
+                    src="./img/item-card-img-1.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="itemsCard">
+                  <a class="deleteBtn" href="#">
+                    <img src="./img/trash-icon.svg" alt="" />
+                  </a>
+                  <img
+                    class="itemCardImg"
+                    src="./img/item-card-img-1.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="itemsCard">
+                  <a class="deleteBtn" href="#">
+                    <img src="./img/trash-icon.svg" alt="" />
+                  </a>
+                  <img
+                    class="itemCardImg"
+                    src="./img/item-card-img-1.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4 gx-2">
+              <div class="col">
+                <div class="itemsCard">
+                  <a class="deleteBtn" href="#">
+                    <img src="./img/trash-icon.svg" alt="" />
+                  </a>
+                  <img
+                    class="itemCardImg"
+                    src="./img/item-card-img-2.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="itemsCard">
+                  <a class="deleteBtn" href="#">
+                    <img src="./img/trash-icon.svg" alt="" />
+                  </a>
+                  <img
+                    class="itemCardImg"
+                    src="./img/item-card-img-2.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="itemsCard">
+                  <a class="deleteBtn" href="#">
+                    <img src="./img/trash-icon.svg" alt="" />
+                  </a>
+                  <img
+                    class="itemCardImg"
+                    src="./img/item-card-img-2.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="itemsCard">
+                  <a class="deleteBtn" href="#">
+                    <img src="./img/trash-icon.svg" alt="" />
+                  </a>
+                  <img
+                    class="itemCardImg"
+                    src="./img/item-card-img-2.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <label for="addPhoto" class="itemsCard">
+                  <div>
+                    <img src="./img/camera-icon.svg" alt="" />
+                    <div class="mainText">Add a photo</div>
+                    <input id="addPhoto" type="file" />
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="text-center mt-4">
+              <button class="orangeBtn">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
