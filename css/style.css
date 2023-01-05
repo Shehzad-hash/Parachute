@@ -710,7 +710,9 @@ label.itemsCard .mainText {
 .commonModal .aboutContainer::-webkit-scrollbar-thumb:hover {
   background: white;
 }
-
 .commonModal .hrLine {
   margin: 3em -3em;
+}
+.commonModal select.commonInput {
+  background-size: 4%;
 }
