@@ -3,6 +3,9 @@ body {
   font-size: 1em;
   background-color: #f3f3f3;
 }
+.grayBg {
+  background-color: #f3f3f3 !important;
+}
 
 /* Page Header */
 .pageHeader {
@@ -137,11 +140,11 @@ body {
   border: 1px solid #aaa9a9;
   transition: 200ms all ease-in-out;
 }
-.commonInput:focus-within {
+/* .commonInput:focus-within {
   background-color: #7dcba3;
   color: white;
   border-color: white;
-}
+} */
 .commonInput:focus-within::placeholder {
   color: white;
 }
@@ -171,8 +174,9 @@ select.commonInput {
 }
 .selectBtn:hover,
 .selectBtn.selected {
-  color: #7dcba3;
+  color: white;
   border-color: #7dcba3;
+  background-color: #7dcba3;
 }
 .headlineDetails {
   margin-top: 1em;
@@ -304,13 +308,13 @@ select.commonInput {
   margin-top: 1em;
 }
 .itemsCard {
-  width: 100%;
+  width: 220px !important;
   position: relative;
   height: 220px;
 }
 .itemsCard .itemCardImg {
-  width: 100%;
-  height: 220px;
+  width: 220px !important;
+  height: 220px !important;
 }
 .itemsCard .deleteBtn {
   display: inline-block;
