@@ -356,7 +356,7 @@ label.itemsCard .mainText {
 }
 
 .whiteBody {
-  background-color: white;
+  background-color: white !important;
 }
 .whiteBody .pageHeader {
   border-bottom: 1px solid #00000010;
@@ -473,9 +473,9 @@ label.itemsCard .mainText {
 }
 
 /* Profile Published Page */
-.editUserContainer .mainText span {
+/* .editUserContainer .mainText span {
   text-decoration: underline;
-}
+} */
 .editUserContainer .editUserImg {
   border-radius: 50%;
 }
